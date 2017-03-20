@@ -8,28 +8,28 @@ body
 .markers
   height: 10vh
   width: 100%
-  border: 1px solid black
-  box-sizing: border-box
+  // border: 1px solid black
+  // box-sizing: border-box
 
 .container
   position: relative
   width: 400vw
   height: 100vh
-  padding: 4px
-  border: 1px solid red
-  box-sizing: border-box
+  padding: 5px 0
+  // border: 1px solid red
+  // box-sizing: border-box
 
 .timeline
   height: 100%
   width: 400vw
-  border: 1px solid green
-  box-sizing: border-box
+  // border: 1px solid green
+  // box-sizing: border-box
   display: flex
-  padding: 5px
+  padding: 5px 0
 
 .chapter
-  border: 1px solid blue
-  height: 100%
+  // border: 1px solid blue
+  // height: 100%
   width: 100vw
   box-sizing: border-box
   position: relative
@@ -84,11 +84,20 @@ body
   display: inline-block
   right: calc(50% + 32px)
   top: 50%
+  z-index: -1
   h2
     -webkit-transform-origin: 0% 0%
-    // transform: rotateX(0deg)
     background: black
     color: white
     margin: 0
     padding: 8px 16px
     font-size: 24px
+
+.overlay
+  background: linear-gradient(to right, rgba(255,255,255,1) 0%,rgba(214,214,214,0) 30%,rgba(214,214,214,0) 70%,rgba(255,255,255,1) 100%)
+  // border: 1px solid purple
+  height: calc(100vh - 30px)
+  width: 100vw
+  position: fixed
+  // box-sizing: border-box
+  z-index: 1

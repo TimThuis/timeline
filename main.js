@@ -122,6 +122,9 @@ function keyboardClick(event) {
     case "ArrowLeft":
       journey.reverse();
       break;
+    case "ArrowUp":
+      journey.pause();
+      break;
     default:
       console.log(event.key);
   }
