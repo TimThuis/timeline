@@ -110,6 +110,12 @@ function chapterFour() {
 }
 
 document.addEventListener('keydown', keyboardClick);
+document.addEventListener('keyup')
+const keys = document.querySelectorAll('.keys');
+
+function removeStylingKeys() {
+
+}
 
 function keyboardClick(event) {
   switch (event.key) {
@@ -119,7 +125,13 @@ function keyboardClick(event) {
     case "ArrowRight":
       journey.play();
       break;
+    case "d":
+      journey.play();
+      break;
     case "ArrowLeft":
+      journey.reverse();
+      break;
+    case "a":
       journey.reverse();
       break;
     case "ArrowUp":
